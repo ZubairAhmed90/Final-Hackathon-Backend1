@@ -11,7 +11,7 @@ dotenv.config();
 connectDB();
 
 const app = express();
-
+app.get("/",(req,res)=>{res.send("hello world")})
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
